@@ -147,12 +147,12 @@ function App() {
 			<nav className="navbar fixed-top mx-3">
 				<a
 					className="navbar-brand col-sm-3 col-md-2 mr-0 mx-4"
-					href="http://www.dappuniversity.com/bootcamp"
+					href="http://www.falcon.com"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					<img src={logo} className="App-logo" alt="logo" />
-					Nomans Minting Test @ nomanhaq@hotmail.com
+					Nomans Minting Falcon Test @ nomanhaq@hotmail.com
 				</a>
 
 				{account ? (
@@ -170,11 +170,13 @@ function App() {
 			<main>
 				<Row className="my-3">
 					<Col className="text-center">
-						<h1 className="text-uppercase">Open Emojis</h1>
+						<h1 className="text-uppercase">The Royal Falcon Society</h1>
+						<h2 className=""><i>Welcome to the Society</i></h2>
 						<p className="countdown">
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} />}
 						</p>
-						<p>Welcome! Mint your free emoji (not including gas fees) on 11/04/21</p>
+						<p>Mint your FALCON</p>
+						<p>90000000000000000 Wei 0.09 Ether (not including gas fees) on 28/11/2021</p>						
 					</Col>
 				</Row>
 				<Row className="my-4">
