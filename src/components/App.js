@@ -4,7 +4,7 @@ import Countdown from 'react-countdown'
 import Web3 from 'web3'
 
 // Import Images + CSS
-import logo from '../images/logo.png'
+import logo from '../images/logo.jpeg'
 import happyImage from '../images/happy.png'
 import excitedImage from '../images/excited.png'
 import sadImage from '../images/sad.png'
@@ -109,8 +109,8 @@ function App() {
 			return
 		}
 
-		if (balanceOf > 0) {
-			window.alert('You\'ve already minted!')
+		if (balanceOf > 4) {
+			window.alert('You\'ve already minted 5 collections!')
 			return
 		}
 
@@ -147,12 +147,13 @@ function App() {
 			<nav className="navbar fixed-top mx-3">
 				<a
 					className="navbar-brand col-sm-3 col-md-2 mr-0 mx-4"
-					href="http://www.falcon.com"
+					href="https://www.theroyalfalconsociety.com/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					<img src={logo} className="App-logo" alt="logo" />
-					Nomans Minting Falcon Test @ nomanhaq@hotmail.com
+					Minting Falcon Test 
+					
 				</a>
 
 				{account ? (
@@ -170,13 +171,12 @@ function App() {
 			<main>
 				<Row className="my-3">
 					<Col className="text-center">
-						<h1 className="text-uppercase">The Royal Falcon Society</h1>
+						<h1 className="text-uppercase">The Royal Falcon Society </h1>
 						<h2 className=""><i>Welcome to the Society</i></h2>
 						<p className="countdown">
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} />}
 						</p>
-						<p>Mint your FALCON</p>
-						<p>90000000000000000 Wei 0.09 Ether (not including gas fees) on 28/11/2021</p>						
+						<p>Mint your FALCON Starting on 28/11/2021</p>					
 					</Col>
 				</Row>
 				<Row className="my-4">
