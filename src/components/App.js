@@ -4,7 +4,7 @@ import Countdown from 'react-countdown'
 import Web3 from 'web3'
 
 // Import Images + CSS
-import logo from '../images/logo.jpeg'
+import logo from '../images/logo.jpg'
 import happyImage from '../images/happy.png'
 import excitedImage from '../images/excited.png'
 import sadImage from '../images/sad.png'
@@ -147,12 +147,12 @@ function App() {
 			<nav className="navbar fixed-top mx-3">
 				<a
 					className="navbar-brand col-sm-3 col-md-2 mr-0 mx-4"
-					href="https://www.theroyalfalconsociety.com/"
+					href="https://www.coolpigz.io/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					<img src={logo} className="App-logo" alt="logo" />
-					Minting Falcon Test 
+					Minting Cool Pigz 
 					
 				</a>
 
@@ -171,12 +171,12 @@ function App() {
 			<main>
 				<Row className="my-3">
 					<Col className="text-center">
-						<h1 className="text-uppercase">The Royal Falcon Society </h1>
-						<h2 className=""><i>Welcome to the Society</i></h2>
+						<h1 className="text-uppercase">The Cool Pigz </h1>
+						<h2 className=""><i>Welcome to the Club</i></h2>
 						<p className="countdown">
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} />}
 						</p>
-						<p>Mint your FALCON Starting on 28/11/2021</p>					
+						<p>Mint your Cool Pig Starting on 25/12/2021</p>					
 					</Col>
 				</Row>
 				<Row className="my-4">

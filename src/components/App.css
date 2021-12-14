@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400;700&family=Rubik:wght@400;700&display=swap');
 
 :root {
-    --clr-prussian-blue: #003853;
-    --clr-orient: #006178;
+    --clr-prussian-blue: #8B8180;
+    --clr-orient: #F5A3C7;
     --clr-malibu: #92D3F5;
 
     --clr-golden-fizz: #FCEA2B;
@@ -44,7 +44,7 @@ main {
     display: grid;
     place-content: center;
 
-    padding: 3em 1em;
+    padding: 5em 3em;
 }
 
 .panel {
@@ -56,24 +56,29 @@ main {
 }
 
 /* TEXT STYLES */
+
 h1 {
+    color:blanchedalmond;
     font-family: "Gluten";
-    font-weight: 700;
-    font-size: 3rem;
+    font-weight: 900;
+    font-size: 6rem;
 }
 
 .countdown {
-    font-weight: 700;
-    font-size: 2.5rem;
+    font-weight: 900;
+    font-size: 3rem;
 }
 
 p {
+    color:rgb(255, 220, 48);
     font-size: 1.15rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 /* LINK / BUTTON STYLES */
 a, a:hover {
-    color: var(--clr-malibu);
+    color: rgb(255, 220, 48);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contract-link {
@@ -85,19 +90,21 @@ a, a:hover {
     padding: 1em 2em;
     margin: .5em auto;
 
-    background: var(--clr-orient);
-    color: var(--clr-malibu);
+    background: black;
+    color: beige;
 
     border: none;
 
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 1000;
 
     transition: all 500ms ease;
 }
 
 .nav-button {
+    background: rgb(248, 186, 15);
+    color: beige;
     padding: .75em 1.5em;
     margin: .5em 0;
 }
@@ -115,8 +122,8 @@ a, a:hover {
 }
 
 .mint-button:hover, .button:hover {
-    background: var(--clr-malibu);
-    color: var(--clr-prussian-blue);
+    background:#F5A3C7;
+    color: beige;
 
     box-shadow: 0px 0px 10px var(--clr-malibu),
     0px 0px 30px var(--clr-malibu),
@@ -142,12 +149,12 @@ a, a:hover {
     content: '';
     position: absolute;
     inset: 4px;
-    background: var(--clr-prussian-blue);
+    background: rgb(248, 186, 15);
     transition: 0.5s;
 }
 
 .mint-button:hover::after {
-    background: var(--clr-malibu);
+    background: #F5A3C7;
 }
 
 .mint-button span {
@@ -165,9 +172,10 @@ a, a:hover {
 
 /* IMAGE STYLES */
 .App-logo {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
     margin: 0 10px;
+    
 }
 
 .image-showcase {
